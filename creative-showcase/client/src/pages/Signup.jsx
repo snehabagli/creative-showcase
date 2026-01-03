@@ -11,7 +11,7 @@ export default function Signup() {
     e.preventDefault();
 
     try {
-      const res = await fetch("https://creative-showcase-fuw5.onrender.com/auth/register", {
+      const res = await fetch("https://creative-showcase-fuw5.onrender.com/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, email, password }),
