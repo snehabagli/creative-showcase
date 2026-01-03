@@ -8,7 +8,7 @@ function Dashboard() {
   const token = localStorage.getItem("token");
 
   const loadImages = async () => {
-    const res = await fetch("https://creative-showcase-fuw5.onrender.com/images", {
+    const res = await fetch("https://creative-showcase-fuw5.onrender.com/api/images", {
       headers: { Authorization: `Bearer ${token}` },
     });
     const data = await res.json();
