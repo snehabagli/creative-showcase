@@ -8,7 +8,7 @@ function Dashboard() {
   const token = localStorage.getItem("token");
 
   const loadImages = async () => {
-    const res = await fetch("http://localhost:5000/api/images", {
+    const res = await fetch("https://creative-showcase-fuw5.onrender.com/images", {
       headers: { Authorization: `Bearer ${token}` },
     });
     const data = await res.json();
@@ -25,7 +25,7 @@ function Dashboard() {
     const formData = new FormData();
     formData.append("image", file);
 
-    await fetch("http://localhost:5000/api/images/upload", {
+    await fetch("https://creative-showcase-fuw5.onrender.com/images/upload", {
       method: "POST",
       headers: { Authorization: `Bearer ${token}` },
       body: formData,
@@ -36,7 +36,7 @@ function Dashboard() {
   };
 
   const deleteImage = async (id) => {
-    await fetch(`http://localhost:5000/api/images/${id}`, {
+    await fetch(`https://creative-showcase-fuw5.onrender.com/images/${id}`, {
       method: "DELETE",
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -59,7 +59,7 @@ function Dashboard() {
         <div className="image-grid">
           {images.map((img) => (
             <div key={img._id} className="img-card">
-              <img src={`http://localhost:5000${img.imageUrl}`} alt="" />
+              <img src={`https://creative-showcase-fuw5.onrender.com${img.imageUrl}`} alt="" />
               <button onClick={() => deleteImage(img._id)}>Delete</button>
             </div>
           ))}
