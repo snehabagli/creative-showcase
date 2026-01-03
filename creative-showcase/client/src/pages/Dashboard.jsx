@@ -25,7 +25,7 @@ function Dashboard() {
     const formData = new FormData();
     formData.append("image", file);
 
-    await fetch("https://creative-showcase-fuw5.onrender.com/images/upload", {
+    await fetch("https://creative-showcase-fuw5.onrender.com/api/images/upload", {
       method: "POST",
       headers: { Authorization: `Bearer ${token}` },
       body: formData,
@@ -36,7 +36,7 @@ function Dashboard() {
   };
 
   const deleteImage = async (id) => {
-    await fetch(`https://creative-showcase-fuw5.onrender.com/images/${id}`, {
+    await fetch(`https://creative-showcase-fuw5.onrender.com/api/images/${id}`, {
       method: "DELETE",
       headers: { Authorization: `Bearer ${token}` },
     });
