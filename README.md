@@ -7,7 +7,9 @@ This project was built as part of the **Intern Technical Assessment – Engineer
 ---
 
 ##  Live Demo
- *(Add your deployed link here after deployment)*
+ Frontend (Netlify): 👉 https://creativosho.netlify.app
+
+Backend (Render): 👉 https://creative-showcase-fuw5.onrender.com
 
 ## GitHub Repository
  *(This repository)*
