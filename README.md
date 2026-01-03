@@ -152,19 +152,19 @@ Login(POST)
   "password": "1234"
 }
 
-// Upload Image
+##  Upload Image
 Method: POST
 Body: form-data
 Key: image → File
 Header : Authorization: Bearer <token>
 
 
-// Deployment 
+##  Deployment 
 Frontend: Vercel / Netlify
 Backend: Render / Railway
 Database: MongoDB Atlas (required)
 
-// Assessment Checklist
+##  Assessment Checklist
 Authentication (JWT)
 ✔ Image Upload & Display
 ✔ Secure Dashboard
@@ -173,10 +173,10 @@ Authentication (JWT)
 ✔ Clean README
 ✔ Ready for Submission
 
-// Author
+##  Author
 Sneha Bagli
 
-// FINAL VERDICT
+##  FINAL VERDICT
 ✅ Project requirements: FULFILLED
 ✅ Auth (JWT): WORKING
 ✅ Image upload/delete: WORKING
