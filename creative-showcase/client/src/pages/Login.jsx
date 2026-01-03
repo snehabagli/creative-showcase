@@ -10,7 +10,7 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const res = await fetch("https://creative-showcase-fuw5.onrender.com/auth/login", {
+      const res = await fetch("https://creative-showcase-fuw5.onrender.com/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
