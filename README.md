@@ -11,9 +11,6 @@ This project was built as part of the **Intern Technical Assessment – Engineer
 
 Backend (Render): 👉 https://creative-showcase-fuw5.onrender.com
 
-## GitHub Repository
- *(This repository)*
-
 ---
 
 ##  Features
@@ -107,12 +104,6 @@ CREATIVE-SHOWCASE
 ##  Environment Variables
 
 Create a `.env` file inside the `server` folder:
-
-```env
-PORT=5000
-MONGO_URI=mongodb+srv://Anu:2512bagLi@cluster0.5zrkvbi.mongodb.net/?appName=Cluster0
-JWT_SECRET=supersecretkey
-
 
 ㆍHow to Run Locally
 1 Clone the Repository
